@@ -148,7 +148,6 @@ def equality_constraint14(model, i):
         (PL*model.V4i[i] - QL*model.V4r[i])/(model.V4r[i]**2 + model.V4i[i]**2)==0
         
         
-        
 #make sure we only select one transformer
 def equality_constraint15(model):
     return sum(model.sj[j] for j in range(sizeSj)) == 1
